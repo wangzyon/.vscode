@@ -1,0 +1,11 @@
+// 这里指每次运行launch之前都会编译一遍
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "make pro -j6"
+        }
+    ]
+}

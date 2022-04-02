@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/local/anaconda3/lib/python3.8/site-packages/trtpy/trt8cuda115cudnn8/include/**",
+                "/usr/local/anaconda3/lib/python3.8/site-packages/trtpy/include/**"
+            ], // 让 intelliSence engine（语法提示，自动补全）,能够找到所有需要的头文件
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++11", //递归查询，除了当前目录，多少级都往下找
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,58 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        // python debug
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            // "program" : "main.py",
+            "console": "integratedTerminal",
+            "justMycode": true // false时,可以进入一些库的源码里面进行调试，比如进入pytorch的一部分源码
+        },
+        // C++ debug
+        {
+            "name": "C++ file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/workspace/pro", // 待调试的文件，指C++生成的可执行文件
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/workspace", // C++运行时依赖和其他文件（例如图片）
+            "environment": [
+                // 等价于export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/mypath/to/lib/
+                {
+                    "name": "LD_LIBRARY_PATH",
+                    "value": "$(LD_LIBRARY_PATH):/mypath/to/lib/"
+                },
+                {
+                    "name": "workdir",
+                    "value": "workspace"
+                },
+                {
+                    "name": "srcdir",
+                    "value": "src"
+                },
+                {
+                    "name": "objdir",
+                    "value": "objs"
+                },
+                {
+                    "name": "pwd",
+                    "value": "aswfzcasx"
+                }
+            ],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build" //在运行lauch之前先运行task.json里内容
+        }
+    ]
+}

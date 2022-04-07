@@ -5,6 +5,7 @@
             // 语法提示、自动补全, 能够找到所有需要的头文件
             "includePath": [
                 "${workspaceFolder}/**",
+				"${workspaceFolder}/include/**",
                 "/usr/local/anaconda3/lib/python3.8/site-packages/trtpy/trt8cuda115cudnn8/include/**",
             ],
             "compilerPath": "/usr/bin/gcc",
@@ -15,6 +16,7 @@
             "browse": {
                 "path": [
                     "${workspaceFolder}/**",
+					"${workspaceFolder}/include/**",
                     "${workspaceFolder}/lean/**",
                 ]
             },

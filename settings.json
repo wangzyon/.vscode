@@ -36,5 +36,9 @@
         "tuple": "cpp",
         "istream": "cpp",
         "ostream": "cpp"
+    },
+    "terminal.integrated.env.linux": {
+        "PYTHONPATH": "${workspaceFolder}"
     }
+    // terminal.integrated.env.windows
 }

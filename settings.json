@@ -37,10 +37,14 @@
         "istream": "cpp",
         "ostream": "cpp"
     },
+    // terminal.integrated.env.windows
     "terminal.integrated.env.linux": {
         "PYTHONPATH": "${workspaceFolder}"
     },
+    // python format
     "python.formatting.yapfArgs": ["--style={ based_on_style: pep8, column_limit: 120 }"],
-    "python.formatting.provider": "yapf"
-    // terminal.integrated.env.windows
+    "python.formatting.provider": "yapf",
+    // C_Cpp format
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4 , ColumnLimit: 0, NamespaceIndentation: All}"
+    
 }

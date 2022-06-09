@@ -46,5 +46,7 @@
     "python.formatting.provider": "yapf",
     // C_Cpp format
     "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4 , ColumnLimit: 0, NamespaceIndentation: All}"
+    // python无法跳转工作区其他python脚本module，安装pylance并在搜索框中搜索python:language，配置pylance即可
+    // python 交互式运行默认快捷键shift+enter，可在ctrl+k中修改
     
 }

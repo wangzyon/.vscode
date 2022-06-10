@@ -37,6 +37,7 @@
         "istream": "cpp",
         "ostream": "cpp"
     },
+    // python环境变量，多个环境变量用;间隔，且必须用${workspaceFolder}相对路径形式
     // terminal.integrated.env.windows
     "terminal.integrated.env.linux": {
         "PYTHONPATH": "${workspaceFolder}"

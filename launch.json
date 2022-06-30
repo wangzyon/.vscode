@@ -9,7 +9,7 @@
             "program": "${file}",
             // "program" : "main.py",
             "console": "integratedTerminal",
-            "justMycode": true // false时,可以进入一些库的源码里面进行调试，比如进入pytorch的一部分源码
+            "justMyCode": false // false时,可以进入一些库的源码里面进行调试，比如进入pytorch的一部分源码
         },
         // C++ debug
         {
